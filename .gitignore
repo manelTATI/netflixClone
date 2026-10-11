@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+# Secrets: keep real environment files out of git
+.env
+.env.*
+!.env.example
+
+*.log
+
+# Local caches
+.cache/

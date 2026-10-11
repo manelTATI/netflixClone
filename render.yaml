@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: netflix-clone
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: TMDB_API_KEY
+        sync: false
+      - key: WATCH_REGION
+        sync: false
